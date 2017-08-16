@@ -24,7 +24,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListCell" id="uB9-4S-bpv">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListCell" id="uB9-4S-bpv" customClass="MovieCell" customModule="MyMovieChart" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uB9-4S-bpv" id="uBP-f0-eA1">
@@ -67,6 +67,12 @@
                                         <constraint firstItem="C0Z-Ry-Qe8" firstAttribute="trailing" secondItem="83t-ZN-ZOq" secondAttribute="trailing" id="m7g-UM-gfv"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="desc" destination="Vbu-ZD-SZL" id="7Hh-im-1Gf"/>
+                                    <outlet property="opendate" destination="C0Z-Ry-Qe8" id="a2C-go-XVB"/>
+                                    <outlet property="rating" destination="83t-ZN-ZOq" id="Efg-FD-Dss"/>
+                                    <outlet property="title" destination="oTV-gD-ZS8" id="MBb-PV-c56"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

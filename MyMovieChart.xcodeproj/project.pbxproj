@@ -14,6 +14,7 @@
 		F3B4A7741F4425D600A41C71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3B4A7721F4425D600A41C71 /* LaunchScreen.storyboard */; };
 		F3B4A77C1F44269600A41C71 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4A77B1F44269600A41C71 /* ListViewController.swift */; };
 		F3B4A77E1F442A6900A41C71 /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4A77D1F442A6900A41C71 /* MovieVO.swift */; };
+		F3B4A7801F4469DA00A41C71 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B4A77F1F4469DA00A41C71 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F3B4A7751F4425D600A41C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3B4A77B1F44269600A41C71 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		F3B4A77D1F442A6900A41C71 /* MovieVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
+		F3B4A77F1F4469DA00A41C71 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				F3B4A7691F4425D600A41C71 /* AppDelegate.swift */,
 				F3B4A76B1F4425D600A41C71 /* ViewController.swift */,
 				F3B4A76D1F4425D600A41C71 /* Main.storyboard */,
+				F3B4A77F1F4469DA00A41C71 /* MovieCell.swift */,
 				F3B4A77D1F442A6900A41C71 /* MovieVO.swift */,
 				F3B4A77B1F44269600A41C71 /* ListViewController.swift */,
 				F3B4A7701F4425D600A41C71 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 				F3B4A76C1F4425D600A41C71 /* ViewController.swift in Sources */,
 				F3B4A77E1F442A6900A41C71 /* MovieVO.swift in Sources */,
 				F3B4A76A1F4425D600A41C71 /* AppDelegate.swift in Sources */,
+				F3B4A7801F4469DA00A41C71 /* MovieCell.swift in Sources */,
 				F3B4A77C1F44269600A41C71 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +314,7 @@
 				F3B4A77A1F4425D600A41C71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
