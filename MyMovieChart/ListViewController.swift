@@ -56,7 +56,18 @@ class ListViewController: UITableViewController {
         //테이블 셀 객체를 직접 생성하는 대신 큐로부터 가져옴
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell")!
-        cell.textLabel?.text = row.title
+        
+        //태그를 이용한 데이터 할당
+        let title = cell.viewWithTag(101) as? UILabel
+        let desc = cell.viewWithTag(102) as? UILabel
+        let opendate = cell.viewWithTag(103) as? UILabel
+        let rating = cell.viewWithTag(104) as? UILabel
+        
+        title?.text = row.title
+        desc?.text = row.description
+        opendate?.text = row.opendate
+        rating?.text = "\(row.rating!)"
+        
         
         return cell
     }
