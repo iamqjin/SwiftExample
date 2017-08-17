@@ -17,4 +17,5 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var opendate: UILabel! //개봉일
     
     @IBOutlet weak var rating: UILabel! //평점
+    @IBOutlet weak var thumbnail: UIImageView! //썸네일 이미지
 }

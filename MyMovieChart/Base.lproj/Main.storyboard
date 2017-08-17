@@ -31,14 +31,11 @@
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영화 제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTV-gD-ZS8">
-                                            <rect key="frame" x="8" y="8" width="56" height="18"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영화에 대한 내용 설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbu-ZD-SZL">
-                                            <rect key="frame" x="8" y="48" width="112" height="16"/>
+                                            <rect key="frame" x="71" y="48" width="220" height="16"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="220" id="d7V-rE-uil"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -55,22 +52,39 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CwD-w3-QyD">
+                                            <rect key="frame" x="8" y="6" width="55" height="68"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="55" id="nCn-Ig-Iaq"/>
+                                                <constraint firstAttribute="height" constant="68" id="ogP-RC-RUF"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영화 제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTV-gD-ZS8">
+                                            <rect key="frame" x="71" y="8" width="56" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="CwD-w3-QyD" firstAttribute="leading" secondItem="uBP-f0-eA1" secondAttribute="leading" constant="8" id="10l-37-2FR"/>
                                         <constraint firstItem="oTV-gD-ZS8" firstAttribute="top" secondItem="uBP-f0-eA1" secondAttribute="topMargin" id="2YC-WT-dbB"/>
                                         <constraint firstAttribute="trailing" secondItem="83t-ZN-ZOq" secondAttribute="trailing" constant="5" id="2nD-LA-yWw"/>
                                         <constraint firstItem="C0Z-Ry-Qe8" firstAttribute="top" secondItem="oTV-gD-ZS8" secondAttribute="top" id="7Kv-YR-hcz"/>
                                         <constraint firstItem="Vbu-ZD-SZL" firstAttribute="top" secondItem="oTV-gD-ZS8" secondAttribute="bottom" constant="22" id="8To-Gc-bTu"/>
                                         <constraint firstItem="83t-ZN-ZOq" firstAttribute="bottom" secondItem="Vbu-ZD-SZL" secondAttribute="bottom" id="DZd-AG-vNX"/>
-                                        <constraint firstItem="oTV-gD-ZS8" firstAttribute="leading" secondItem="uBP-f0-eA1" secondAttribute="leadingMargin" id="JiQ-Xi-5Dg"/>
+                                        <constraint firstItem="oTV-gD-ZS8" firstAttribute="leading" secondItem="CwD-w3-QyD" secondAttribute="trailing" constant="8" id="JBw-B3-VTt"/>
                                         <constraint firstItem="Vbu-ZD-SZL" firstAttribute="leading" secondItem="oTV-gD-ZS8" secondAttribute="leading" id="UXF-Pv-b1k"/>
+                                        <constraint firstAttribute="bottom" secondItem="CwD-w3-QyD" secondAttribute="bottom" constant="6" id="hm0-ae-bT3"/>
                                         <constraint firstItem="C0Z-Ry-Qe8" firstAttribute="trailing" secondItem="83t-ZN-ZOq" secondAttribute="trailing" id="m7g-UM-gfv"/>
+                                        <constraint firstItem="CwD-w3-QyD" firstAttribute="top" secondItem="uBP-f0-eA1" secondAttribute="top" constant="6" id="uVF-rc-qAP"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="desc" destination="Vbu-ZD-SZL" id="7Hh-im-1Gf"/>
                                     <outlet property="opendate" destination="C0Z-Ry-Qe8" id="a2C-go-XVB"/>
                                     <outlet property="rating" destination="83t-ZN-ZOq" id="Efg-FD-Dss"/>
+                                    <outlet property="thumbnail" destination="CwD-w3-QyD" id="J9r-7T-cw9"/>
                                     <outlet property="title" destination="oTV-gD-ZS8" id="MBb-PV-c56"/>
                                 </connections>
                             </tableViewCell>
