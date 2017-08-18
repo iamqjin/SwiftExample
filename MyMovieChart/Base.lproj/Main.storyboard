@@ -32,9 +32,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영화에 대한 내용 설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbu-ZD-SZL">
-                                            <rect key="frame" x="71" y="48" width="220" height="16"/>
+                                            <rect key="frame" x="71" y="48" width="150" height="16"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="220" id="d7V-rE-uil"/>
+                                                <constraint firstAttribute="width" constant="150" id="d7V-rE-uil"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
